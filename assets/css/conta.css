@@ -1,0 +1,12 @@
+:root{
+    --cor-1:#503765;
+    --cor-2:#965cb4;
+    --cor-3:#c098e1;
+    --cor-4:#e9dbf4;
+}
+body{
+    background-color: var(--cor-3);
+}
+.criarConta{
+    width: 13em;
+}

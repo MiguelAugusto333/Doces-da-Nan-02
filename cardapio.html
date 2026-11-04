@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/cardapio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="text/javascript">
+            window.onload = function(){
+            (function(d, script) {
+            script = d.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = 'https://w.app/widget-v1/YzCoBE.js';
+            d.getElementsByTagName('head')[0].appendChild(script);
+            }(document));
+            };
+            </script>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Story+Script&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Story+Script&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>*Cardápio - Doces da Naná</title>
+</head>
+<body>
+    <div class="container vh-100">
+        <header>
+            <div class="d-flex justify-content-between text-center gap-4 py-2">
+                <div class="d-flex justify-content-between mt-2 gap-2">
+                    <img src="./assets/img/cookito.jpeg" class="logo mt-2" alt="">
+                    <p class="cor-1 mt-4">Doces</p>
+                    <p class="cor-1 mt-4 ">da</p>
+                    <p class="cor-2 mt-4">Naná</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center ">
+                    <a href="./index.html" class="inicio border fw-bold border-0 mt-3 fs-4 ms-5 btn">inicio</a> 
+                    <a href="./cardapio.html" class="cardapio border fw-bold border-0 mt-3 fs-4 ms-5 btn">Cardápio</a>
+                    <a href="" class="sobre mt-3 fs-4 ms-5 btn border fw-bold border-0">Sobre</a>
+                    <a href="./contato.html" class="contato border fw-bold border-0 mt-3 fs-4 ms-5 me-5 btn">Contato</a>
+                </div>
+                <div class="d-flex align-items-center me-4">
+                    <div class="text-center  ">
+                        <a class="entrar fs-4 px-4 mt-2 btn shadow bg-white rounded-4 fw-bold" href="./conta.html">Entrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card container">
+                <div class="header card-header">
+                    <div class="">
+                        <p class="pequeno fs-5 mt-2">Nosso</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <p class="grande01 fw-bold">Cardápio de</p>
+                        <p class="grande02 fw-bold">Doces</p>
+                    </div>
+                    <div class="">
+                        <p class="text-light">aqui você encontra os melhores doces, feitos com muito <br>carinho e ingredientes de altissíma qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="card">
+                <div class="cardBody card-body">
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="todos btn rounded-pill d-flex justify-content-center pt-1" data-filter="todos">
+                            <p class="text-light">Todos</p>
+                        </div>
+                        <div class="brownies btn rounded-pill d-flex justify-content-center pt-1" data-filter="brownies">
+                            <p class="text-light">Brownies</p>
+                        </div>
+                        <div class="cookies btn rounded-pill d-flex justify-content-center pt-1" data-filter="cookies">
+                            <p class="text-light">Cookies</p>
+                    </div>
+                        <div class="bombons btn rounded-pill d-flex justify-content-center pt-1" data-filter="bombons">
+                            <p class="text-light">Bombom</p>
+                        </div>
+                        <div class="bolos pt-1 rounded-pill btn d-flex justify-content-center" data-filter="bolos">
+                            <p class="text-light">Bolos</p>
+                        </div>
+                        <div class="outros pt-1 rounded-pill btn d-flex justify-content-center" data-filter="outros">
+                            <p class="text-light">Outros</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                <div class="bolo card produto rounded-4 mb-2 h-100 w-100">
+                                    <img src="./assets/img/bolo.png" class="boloFoto object-fit-cover img-fluid rounded-top-4" alt="">
+                                    <p class="ms-2 mt-2 fw-bolder">Matilda Cake</p>
+                                    <p class="ms-2">Bolo feito com chocolate de qualidade e massa fofinha OSS</p>
+                                    <p class="ms-2 fw-bold ">R$18,00</p>
+                                    <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
+                                </div>
+                            </div>
+                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                    <div class="cookie card produto rounded-4 h-100 w-100">
+                                        <img src="./assets/img/cookies.jpg" alt="" class="cookieFoto img-fluid rounded-top-4">
+                                        <p class="ms-2 mt-2 fw-bolder">Mini Cookies</p>
+                                        <p class="ms-2">Mini Cookies feitos com gotas de chocolate OSS</p>
+                                        <p class="ms-2 fw-bold">R$15,00</p>
+                                        <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                    <div class="cookie card produto rounded-4 h-100 w-100">
+                                        <img src="./assets/img/bombom.jpg" alt="" class="bombomFoto object-fit-cover img-fluid rounded-top-4">
+                                        <p class="ms-2 mt-2 fw-bolder">Caixa de bombons</p>
+                                        <p class="ms-2">Bombons feitos com recheio de brigadeiro meio amargo</p>
+                                        <p class="ms-2 fw-bold">R$12,00</p>
+                                        <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                    <div class="cookie card produto rounded-4 h-100 w-100">
+                                        <img src="./assets/img/brownie.webp" alt="" class="brownieFoto object-fit-cover img-fluid rounded-top-4">
+                                        <p class="ms-2 mt-2 fw-bolder">Brownie recheado</p>
+                                        <p class="ms-2">Brownie recheado com kinder e nutella</p>
+                                        <p class="ms-2 fw-bold">R$16.00</p>
+                                        <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                    <div class="cookie card produto rounded-4 h-100 w-100">
+                                        <img src="./assets/img/bombom.jpg" alt="" class="bombomFoto object-fit-cover img-fluid rounded-top-4">
+                                        <p class="ms-2 mt-2 fw-bolder">Caixa de bombons</p>
+                                        <p class="ms-2">Bombons feitos com recheio de brigadeiro meio amargo</p>
+                                        <p class="ms-2 fw-bold">R$12,00</p>
+                                        <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                    <div class="cookie card produto rounded-4 h-100 w-100">
+                                        <img src="./assets/img/brownie.webp" alt="" class="brownieFoto object-fit-cover img-fluid rounded-top-4">
+                                        <p class="ms-2 mt-2 fw-bolder">Brownie recheado</p>
+                                        <p class="ms-2">Brownie recheado com kinder e nutella</p>
+                                        <p class="ms-2 fw-bold">R$16.00</p>
+                                        <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                    <div class="cookie card produto rounded-4 h-100 w-100">
+                                        <img src="./assets/img/cookies.jpg" alt="" class="cookieFoto img-fluid rounded-top-4">
+                                        <p class="ms-2 mt-2 fw-bolder">Mini Cookies</p>
+                                        <p class="ms-2">Mini Cookies feitos com gotas de chocolate OSS</p>
+                                        <p class="ms-2 fw-bold">R$15,00</p>
+                                        <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="">
+                            <div class="card-body rounded-pill" id="areaCarrinho">
+                                <h2>Meu carrinho</h2>
+                                    <div id="itensCarrinho">
+                                        <p>Seu carrinho está vazio.</p>
+                                    </div>
+                                    <h4 id="valorTotal">Total: R$ 0,00</h4>
+                                    <button id="finalizarPedido" class="adicionarCarrinho rounded-pill text-light px-4 py-2" type="button">
+                                        Finalizar pedido pelo WhatsApp</button>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                <footer></footer>
+            </div>
+        </div>
+    <script src="./assets/js/cardapio.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+</body>
+</html>

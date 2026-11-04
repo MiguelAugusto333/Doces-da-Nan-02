@@ -1,0 +1,184 @@
+:root{
+    --cor-1:#503765;
+    --cor-2:#965cb4;
+    --cor-3:#c098e1;
+    --cor-4:#e9dbf4;
+}
+body{
+    background-color: var(--cor-3);
+    color: var(--cor-1);
+    animation: aparecer 0.8s ease-out both;
+} 
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.container{
+    max-width: 1200px;
+    background-color: var(--cor-3);
+}
+.logo{
+    height: 5em;
+    width: 5em;
+    object-fit: contain;
+}
+.cor-1{
+    font-size: 2em;
+    font-family: "Story Script", sans-serif;
+    color: #985CB4;
+}
+.cor-2{
+    font-family: "Climate Crisis", sans-serif;
+    font-size: 2em;
+    color: #503665;
+}
+.inicio{
+    color: white;
+    transition: transform 0.3s ease;
+}
+.inicio:hover{
+    transform: scale(1.1);
+}
+.cardapio{
+    color: white;
+    transition: transform 0.3s ease;
+}
+.cardapio:hover{
+    transform: scale(1.1);
+}
+.contato{
+    color: white;
+    transition: transform 0.3s ease;
+}
+.contato:hover{
+    transform: scale(1.1);
+}
+.entrar{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.entrar:hover{
+    transform: scale(1.1);
+}
+.sobre{
+    color: white;
+    transition: transform 0.3s ease;
+}
+.sobre:hover{
+    transform: scale(1.1);
+}
+.carrinho{
+    color: white;
+}
+.header{
+    background-color: #9B6BC2;
+}
+.pequeno{
+    color:#503665;
+}
+.grande01{
+    color: var(--cor-4);
+    font-size: 3em;
+}
+.grande02{
+    color: var(--cor-1);
+    font-size: 3em;
+}
+.cardBody{
+    background-color: #C098E1;
+    max-width: 1200px;
+}
+.card{
+    border: 1px solid #C098E1;
+}
+.card-02{
+    border-radius: 1px solid;
+}
+.todos{
+    background-color: var(--cor-1);
+    height: 2em;
+    width: 8em;
+}
+.brownies{
+    background-color: var(--cor-1);
+    height: 2em;
+    width: 8em;
+}
+.cookies{
+    background-color: var(--cor-1);
+    height: 2em;
+    width: 8em;
+}
+.bombons{
+    background-color: var(--cor-1);
+    height: 2em;
+    width: 8em;
+}
+.bolos{
+    background-color: var(--cor-1);
+    height: 2em;
+    width: 8em; 
+}
+.outros{
+    background-color: var(--cor-1);
+    height: 2em;
+    width: 8em;
+}
+.boloFoto{
+    height: 148px;
+}
+.bombomFoto{
+    height: 148px;
+}
+.brownieFoto{
+    height: 148px;
+}
+.bolo{
+    color: #503765;
+}
+.cookie{
+    color: #503765;
+}
+.corDoces{
+    background-color: #9B6BC2;
+    width: 18em;
+}
+.adicionarCarrinho{
+    background-color: var(--cor-1);
+    border: 1px solid var(--cor-1);
+}
+
+/* Botões de categoria */
+
+[data-filter] {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+[data-filter]:hover {
+    background-color: var(--cor-2);
+    transform: translateY(-2px);
+}
+
+/* Botões de adicionar */
+
+.adicionarCarrinho {
+    cursor: pointer;
+    transition: 0.2s ease;
+    padding: 0.6rem 1rem;
+}
+
+.adicionarCarrinho:hover {
+    background-color: var(--cor-2);
+}
+
+/* Área do carrinho */
+
+#areaCarrinho {
+    color: var(--cor-1);
+}
+
+#finalizarPedido:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
