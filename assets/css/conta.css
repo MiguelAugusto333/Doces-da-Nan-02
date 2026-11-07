@@ -6,7 +6,12 @@
 }
 body{
     background-color: var(--cor-3);
+    animation: aparecer  0.8s ease-out both;;
 }
 .criarConta{
     width: 13em;
+}
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }

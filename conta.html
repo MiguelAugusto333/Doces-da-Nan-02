@@ -17,7 +17,7 @@
                         <div class="card px-4 py-2 rounded-4">
                             <p class="fs-1 fw-bold">Criar sua conta</p>
                             <p class="fw-light fs-5">Preencha seus dados abaixo</p>
-                            <div class="formCadastro">
+                            <form id="formCadastro">
                             <div class="mb-3">
                                 <label for="nome" class="mb-1 fw-bold">Nome Completo</label>
                                 <div class="input-group">
@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="nome" class="mb-1 fw-bold">E-mail</label>
+                                <label for="email" class="mb-1 fw-bold">E-mail</label>
                                 <div class="input-group">
                                     <span class="input-group-text">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="nome" class="mb-1 fw-bold">Senha</label>
+                                <label for="senha" class="mb-1 fw-bold">Senha</label>
                                 <div class="input-group">
                                     <span class="input-group-text">
                                     </span>
@@ -62,10 +62,15 @@
                                     Eu aceitos os Termos de Uso e a Politica de Privacidade
                                 </label>
                             </div>
-                            <div class="d-flex justify-content-center">
+                            <div class="text-center">
                                 <button class="text-white bg-primary rounded-pill btn criarConta" type="submit">Criar conta</button>
+                                <p class="text-center mt-3">
+                                Já tem uma conta?
+                                <a href="login.html">Faça login</a>
+                                </p>
+                                </div>
                             </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -73,6 +78,12 @@
         </section>
     </main>
     </div>
+    <script src="./assets/js/conta.js"></script>
+    <!-- Biblioteca Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Conexão com Supabase -->
+    <script src="./assets/js/supabase.js"></script>
+    <!-- Código do cadastro -->
     <script src="./assets/js/conta.js"></script>
 </body>
 </html>

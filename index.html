@@ -12,6 +12,16 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+  <header>
+    <nav class="navbar justify-content-end">
+      <button
+    type="button"
+    onclick="sairDaConta()"
+    class="btn btn-danger me-4 mt-3">
+    Sair da conta
+</button>
+    </nav>
+  </header>
   <main>
     <h1 class="logo" aria-label="Doces da Naná">
       <span class="doces" aria-hidden="true" data-aos="fade-right" >Doces</span>
@@ -34,5 +44,9 @@
   <script>
   AOS.init();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./assets/js/supabase.js"></script>
+  <script src="./assets/js/sair.js"></script>
+  <script src="./assets/js/proteger.js"></script>
 </body>
 </html>
