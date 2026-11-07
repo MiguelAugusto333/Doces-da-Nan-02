@@ -104,26 +104,81 @@ main {
     text-decoration: none;
     padding: 1rem 2.4rem;
     border-radius: 999px;
+
     background: var(--roxo-escuro);
     color: var(--creme);
-    border: 3px solid var(--roxo-escuro);
-    box-shadow: 0 5px 0 #2f1f3d;
-    transition: transform .15s ease, box-shadow .15s ease;
+    border: 2px solid var(--roxo-escuro);
+
+    box-shadow: 0 5px 0 var(--roxo-escuro);
+
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.45s cubic-bezier(.2, .8, .2, 1),
+        box-shadow 0.45s ease,
+        background 0.35s ease;
+
+    animation: flutuar 3s ease-in-out infinite;
 }
 
+/* Flutuação suave */
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+/* Efeito ao passar o mouse */
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 0 #2f1f3d;
+    transform: translateY(-8px) scale(1.04);
+
+    box-shadow:
+        0 12px 22px rgba(47, 31, 61, 0.25),
+        0 5px 0 var(--roxo-escuro);
+
+    background: var(--roxo-escuro);
+    color: var(--creme);
 }
 
+/* Efeito de clique */
 .btn:active {
-    transform: translateY(3px);
-    box-shadow: 0 2px 0 #2f1f3d;
+    transform: translateY(2px) scale(0.97);
+
+    box-shadow: 0 1px 0 var(--roxo-escuro);
 }
 
-.btn:focus-visible {
-    outline: 3px solid var(--creme);
-    outline-offset: 3px;
+/* Brilho passando pelo botão */
+.btn::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+    transition: left 0.7s ease;
+
+    pointer-events: none;
+}
+
+.btn:hover::before {
+    left: 150%;
 }
 
 .onda {
