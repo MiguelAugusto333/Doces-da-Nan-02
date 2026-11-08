@@ -23,109 +23,159 @@
     <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Story+Script&display=swap"rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Story+Script&display=swap"rel="stylesheet"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
     <title>*Cardápio - Doces da Naná</title>
 </head>
 <body>
     <div class="container vh-100">
         <header>
-            <div class="d-flex justify-content-between text-center gap-4 py-2">
-                <div class="d-flex justify-content-between mt-2 gap-2">
-                    <img src="./assets/img/cookito.jpeg" class="logo mt-2" alt="">
-                    <p class="cor-1 mt-4">Doces</p>
-                    <p class="cor-1 mt-4 ">da</p>
-                    <p class="cor-2 mt-4">Naná</p>
-                </div>
-                <div class="d-flex justify-content-between align-items-center ">
-                    <a href="./index.html" class="inicio border fw-bold border-0 mt-3 fs-4 ms-5 btn">inicio</a> 
-                    <a href="./cardapio.html" class="cardapio border fw-bold border-0 mt-3 fs-4 ms-5 btn">Cardápio</a>
-                    <a href="" class="sobre mt-3 fs-4 ms-5 btn border fw-bold border-0">Sobre</a>
-                    <a href="./contato.html" class="contato border fw-bold border-0 mt-3 fs-4 ms-5 me-5 btn">Contato</a>
-                </div>
-                <div class="d-flex align-items-center me-4">
-                    <div class="text-center  ">
-                        <a class="entrar fs-4 px-4 mt-2 btn shadow bg-white rounded-4 fw-bold" href="./conta.html">Entrar</a>
-                    </div>
-                </div>
+            <header>
+    <!-- Menu principal -->
+    <nav class="navbar navbar-expand-lg navbar-doces py-3">
+        <div class="container">
+            <!-- Logo -->
+            <a href="./index.html" class="navbar-brand d-flex align-items-center gap-2">
+                <img src="./assets/img/cookito.jpeg" class="logo" alt="Logo Doces da Naná">
+
+                <span class="cor-1">Doces</span>
+                <span class="cor-1">da</span>
+                <span class="cor-2">Naná</span>
+            </a>
+            <!-- Botão do menu no celular -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link fw-bold text-white">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cardapio.html" class="nav-link fw-bold text-white">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link fw-bold text-white">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contato.html" class="nav-link fw-bold text-white">Contato</a>
+                    </li>
+                    <li class="nav-item">
+    <!-- Aparece quando não está logado -->
+    <a id="botaoEntrar"
+        href="./login.html"
+        class="entrar btn shadow bg-white rounded-4 fw-bold">
+        Entrar
+    </a>
+    <!-- Aparece quando está logado -->
+    <div class="dropdown" id="areaUsuario" style="display: none;">
+        <button class="icone-usuario"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            aria-label="Abrir menu do usuário">
+            <i class="bi bi-person"></i>
+    </button>
+        <div class="dropdown-menu dropdown-menu-end p-3 menu-usuario">
+            <h6 id="nomeCliente">Olá!</h6>
+            <p id="emailCliente" class="text-muted small"></p>
+            <hr>
+            <button class="dropdown-item text-danger"
+                type="button"
+                onclick="sairDaConta()">
+                <i class="bi bi-box-arrow-right me-2"></i>
+                Sair da conta
+            </button>
+        </div>
+    </div>
+</li>
+                </ul>
             </div>
-            <div class="card container">
-                <div class="header card-header">
-                    <div class="">
-                        <p class="pequeno fs-5 mt-2">Nosso</p>
-                    </div>
-                    <div class="d-flex gap-3">
-                        <p class="grande01 fw-bold">Cardápio de</p>
-                        <p class="grande02 fw-bold">Doces</p>
-                    </div>
-                    <div class="">
-                        <p class="text-light">aqui você encontra os melhores doces, feitos com muito <br>carinho e ingredientes de altissíma qualidade.</p>
-                    </div>
-                </div>
+        </div>
+    </nav>
+    <!-- Banner do cardápio -->
+    <div class="card container banner-card">
+        <div class="header card-header">
+            <p class="pequeno fs-5 mt-2">Nosso</p>
+            <div class="d-flex flex-wrap gap-2">
+                <p class="grande01 fw-bold">Cardápio de</p>
+                <p class="grande02 fw-bold">Doces</p>
             </div>
+            <p class="text-light">
+                Aqui você encontra os melhores doces, feitos com muito
+                <br class="d-none d-sm-block">
+                carinho e ingredientes de altíssima qualidade.
+            </p>
+        </div>
+    </div>
+</header>
         </header>
         <main>
             <div class="card">
                 <div class="cardBody card-body">
-                    <div class="d-flex gap-3 mb-4">
-                        <div class="todos btn rounded-pill d-flex justify-content-center pt-1 shadow" data-filter="todos">
+                    <div class="categorias d-flex flex-wrap gap-3 mb-4">
+                        <div class="todos btn rounded-pill d-flex justify-content-center pt-1 shadow"
+                        data-filter="todos">
                             <p class="text-light">Todos</p>
                         </div>
-                        <div class="brownies btn rounded-pill d-flex justify-content-center pt-1 shadow" data-filter="brownies">
+                        <div class="brownies btn rounded-pill d-flex justify-content-center pt-1 shadow"
+                        data-filter="brownies">
                             <p class="text-light">Brownies</p>
                         </div>
-                        <div class="cookies btn rounded-pill d-flex justify-content-center pt-1 shadow" data-filter="cookies">
+                        <div class="cookies btn rounded-pill d-flex justify-content-center pt-1 shadow"
+                        data-filter="cookies">
                             <p class="text-light">Cookies</p>
-                    </div>
-                        <div class="bombons btn rounded-pill d-flex justify-content-center pt-1 shadow" data-filter="bombons">
+                        </div>
+                        <div class="bombons btn rounded-pill d-flex justify-content-center pt-1 shadow"
+                        data-filter="bombons">
                             <p class="text-light">Bombom</p>
                         </div>
-                        <div class="bolos pt-1 rounded-pill btn d-flex justify-content-center shadow" data-filter="bolos">
+                        <div class="bolos pt-1 rounded-pill btn d-flex justify-content-center shadow"
+                        data-filter="bolos">
                             <p class="text-light">Bolos</p>
                         </div>
-                        <div class="outros pt-1 rounded-pill btn d-flex justify-content-center shadow" data-filter="outros">
+                        <div class="outros pt-1 rounded-pill btn d-flex justify-content-center shadow"
+                        data-filter="outros">
                             <p class="text-light">Outros</p>
                         </div>
                     </div>
                     <div class="">
-                        <div class="row">
-                            <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                            <div class="col col-md-3" data-aos="flip-left">
                                 <div class="bolo card produto rounded-4 mb-2 h-100 w-100">
                                     <img src="./assets/img/bolo.png" class="boloFoto object-fit-cover img-fluid rounded-top-4" alt="">
                                     <p class="ms-2 mt-2 fw-bolder">Matilda Cake</p>
-                                    <p class="ms-2">Bolo feito com chocolate de qualidade e massa fofinha OSS</p>
+                                    <p class="ms-2">Bolo feito com chocolate de qualidade e massa fofinha</p>
                                     <p class="ms-2 fw-bold ">R$18,00</p>
                                     <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
                                 </div>
                             </div>
-                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                <div class="col col-md-3 gap-3" data-aos="flip-left">
                                     <div class="cookie card produto rounded-4 h-100 w-100">
                                         <img src="./assets/img/cookies.jpg" alt="" class="cookieFoto img-fluid rounded-top-4">
                                         <p class="ms-2 mt-2 fw-bolder">Mini Cookies</p>
-                                        <p class="ms-2">Mini Cookies feitos com gotas de chocolate </p>
+                                        <p class="ms-2">Mini Cookies bem assados com gotas de <br> chocolate </p>
                                         <p class="ms-2 fw-bold">R$15,00</p>
                                         <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                <div class="col col-md-3 gap-3" data-aos="flip-left">
                                     <div class="cookie card produto rounded-4 h-100 w-100">
                                         <img src="./assets/img/bombom.jpg" alt="" class="bombomFoto object-fit-cover img-fluid rounded-top-4">
                                         <p class="ms-2 mt-2 fw-bolder">Caixa de bombons</p>
                                         <p class="ms-2">Bombons feitos com recheio de brigadeiro meio amargo</p>
                                         <p class="ms-2 fw-bold">R$12,00</p>
-                                        <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
-                                    </div>
-                                </div>
-                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
-                                    <div class="cookie card produto rounded-4 h-100 w-100">
-                                        <img src="./assets/img/brownie.webp" alt="" class="brownieFoto object-fit-cover img-fluid rounded-top-4">
-                                        <p class="ms-2 mt-2 fw-bolder">Brownie recheado</p>
-                                        <p class="ms-2">Brownie recheado com kinder e nutella</p>
-                                        <p class="ms-2 fw-bold">R$16.00</p>
                                         <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-3">
-                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mt-2">
+                                <div class="col col-md-3" data-aos="flip-left">
                                     <div class="cookie card produto rounded-4 h-100 w-100">
                                         <img src="./assets/img/bombom.jpg" alt="" class="bombomFoto object-fit-cover img-fluid rounded-top-4">
                                         <p class="ms-2 mt-2 fw-bolder">Caixa de bombons</p>
@@ -134,20 +184,20 @@
                                         <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                <div class="col col-md-3 " data-aos="flip-left">
                                     <div class="cookie card produto rounded-4 h-100 w-100">
                                         <img src="./assets/img/brownie.webp" alt="" class="brownieFoto object-fit-cover img-fluid rounded-top-4">
                                         <p class="ms-2 mt-2 fw-bolder">Brownie recheado</p>
-                                        <p class="ms-2">Brownie recheado com kinder e nutella</p>
+                                        <p class="ms-2">Brownie recheado feito com muito carinho e recheio</p>
                                         <p class="ms-2 fw-bold">R$16.00</p>
                                         <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3 gap-3" data-aos="flip-left">
+                                <div class="col col-md-3" data-aos="flip-left">
                                     <div class="cookie card produto rounded-4 h-100 w-100">
                                         <img src="./assets/img/cookies.jpg" alt="" class="cookieFoto img-fluid rounded-top-4">
                                         <p class="ms-2 mt-2 fw-bolder">Mini Cookies</p>
-                                        <p class="ms-2">Mini Cookies feitos com gotas de chocolate </p>
+                                        <p class="ms-2">Mini Cookies bem assados com gotas de <br>chocolate</p>
                                         <p class="ms-2 fw-bold">R$15,00</p>
                                         <button class="adicionarCarrinho mb-1 rounded-pill text-light ms-5 me-5">Adicionar</button>
                                     </div>
@@ -174,6 +224,7 @@
                 <footer></footer>
             </div>
         </div>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/cardapio.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -181,6 +232,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="./assets/js/supabase.js"></script>
+    <script src="./assets/js/usuario.js"></script>
     <script src="./assets/js/proteger.js"></script>
     <script src="./assets/js/sair.js"></script>
 </body>
